@@ -1,0 +1,73 @@
+CRITICAL - 2022-01-20 21:59:00 --> Class "App\Filters\UserAuthFilter" not found
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('logout', 'before')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-01-20 22:00:00 --> authFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authFilter')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(377): CodeIgniter\Filters\Filters->enableFilter('authFilter', 'before')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-20 22:00:00 --> Class "App\Filters\UserAuthFilter" not found
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-01-20 22:00:01 --> Class "App\Filters\UserAuthFilter" not found
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-01-20 22:00:02 --> Class "App\Filters\UserAuthFilter" not found
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('Register', 'before')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-01-20 22:01:41 --> usessAuth filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('usessAuth')
+#1 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('register/regist...')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('Register/Regist...', 'before')
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-20 22:01:44 --> usessAuth filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('usessAuth')
+#1 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-20 22:01:56 --> usessAuth filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('usessAuth')
+#1 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-20 22:02:17 --> Class "App\Filters\UserAuthFilter" not found
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(386): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-01-20 22:03:19 --> authFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authFilter')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(377): CodeIgniter\Filters\Filters->enableFilter('authFilter', 'before')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-20 22:04:09 --> authFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authFilter')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(377): CodeIgniter\Filters\Filters->enableFilter('authFilter', 'before')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-20 22:04:31 --> UsersAuthFilter filter must have a matching alias defined.
+#0 C:\xampp\htdocs\ci4app\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('UsersAuthFilter')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(377): CodeIgniter\Filters\Filters->enableFilter('UsersAuthFilter', 'before')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
