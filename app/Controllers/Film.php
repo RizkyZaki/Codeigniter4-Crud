@@ -42,6 +42,7 @@ class Film extends BaseController
 
     public function create()
     {
+        session();
         $data = [
             'title' => 'form tambah list',
             'validation' => \Config\Services::validation()
@@ -56,8 +57,8 @@ class Film extends BaseController
             'judul' => [
                 'rules' => 'required|is_unique[film.judul]',
                 'errors' => [
-                    'required' => '{field} Harus diisi cok',
-                    'is_unique' => '{field} Film udah ada blok lu lupa?'
+                    'required' => '{field} Harus diisi',
+                    'is_unique' => '{field} Film sudah ada'
                 ]
             ],
             'poster' => [
@@ -131,8 +132,8 @@ class Film extends BaseController
             'judul' => [
                 'rules' => $rule_judul,
                 'errors' => [
-                    'required' => '{field} harus Diisi anjing',
-                    'is_unique' => '{field} Film udah ada blok lu lupa?'
+                    'required' => '{field} harus Diisi',
+                    'is_unique' => '{field} Film sudah ada?'
                 ]
             ]
         ])) {

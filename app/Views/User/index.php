@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Landing Page</title>
     <!-- Favicon-->
-    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <!-- CSS only -->
 
