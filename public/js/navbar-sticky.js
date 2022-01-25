@@ -1,0 +1,1 @@
+$(function(){window.onscroll=function(){window.pageYOffset>=t?s.classList.add("is-sticky"):s.classList.remove("is-sticky")};var s=document.getElementById("sticky-content-navbar"),t=s.offsetTop});

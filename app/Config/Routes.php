@@ -31,15 +31,17 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Login::index');
-$routes->get('/Register', 'Register::index');
+// $routes->get('/Login', 'Login::index');
+// $routes->get('/Register', 'Register::index');
 $routes->post('/login/process', 'Login::process');
 $routes->get('/logout', 'Login::logout');
-$routes->get('/home', 'Home::index', ['filter' => 'usersAuth']);
-$routes->get('/profile', 'Home::profile', ['filter' => 'usersAuth']);
-$routes->get('/Home/profile', 'Home::profile', ['filter' => 'usersAuth']);
+// $routes->get('/home', 'Home::index', ['filter' => 'usersAuth']);
+$routes->get('/', 'Landing::index');
+$routes->get('/dashboard', 'News::dashboard', ['filter' => 'usersAuth']);
+$routes->add('/profile', 'User::profile', ['filter' => 'usersAuth']);
+$routes->post('/edit', 'User::edit', ['filter' => 'usersAuth']);
+$routes->post('/delete/(:segment)', 'User::delete/$1', ['filter' => 'usersAuth']);
 $routes->get('/film/create', 'Film::create', ['filter' => 'usersAuth']);
-$routes->add('/edit', 'Home::edit', ['filter' => 'usersAuth']);
 $routes->get('/film/edit/(:segment)', 'Film::edit/$1');
 $routes->delete('/film/(:num)', 'Film::delete/$1');
 $routes->get('/film/(:any)', 'Film::detail/$1', ['filter' => 'usersAuth']);

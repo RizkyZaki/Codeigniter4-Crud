@@ -1,0 +1,16 @@
+CRITICAL - 2022-01-24 19:12:44 --> Invalid file: News/dahsboard.php
+#0 C:\xampp\htdocs\ci4app\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('News/dahsboard....')
+#1 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('News/dahsboard', Array, true)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\News.php(8): view('News/dahsboard')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-24 20:21:13 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->edit()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

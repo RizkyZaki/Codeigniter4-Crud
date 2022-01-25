@@ -6,10 +6,6 @@ use App\Models\UsersModel;
 
 class Login extends BaseController
 {
-    public function index()
-    {
-        return view('Pages/Login');
-    }
 
     public function process()
     {
@@ -29,7 +25,7 @@ class Login extends BaseController
                     'name' => $dataUser['name'],
                     'logged_in' => TRUE
                 ]);
-                return redirect()->to(base_url('home'));
+                return redirect()->to(base_url('dashboard'));
             } else {
                 session()->setFlashdata('error', 'Username & Password Salah');
                 return redirect()->back();

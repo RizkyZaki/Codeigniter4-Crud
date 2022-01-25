@@ -6,10 +6,6 @@ use App\Models\UsersModel;
 
 class Register extends BaseController
 {
-    public function index()
-    {
-        echo view('Pages/Register');
-    }
     public function process()
     {
         if (!$this->validate([

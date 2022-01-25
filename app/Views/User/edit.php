@@ -65,6 +65,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Edit</button>
                 </form>
+                <a href="<?= base_url('/delete/' .session()->get('id')); ?>" class="btn btn-danger mt-3">Delete Account</a>
             </div>
         </div>
     </div>

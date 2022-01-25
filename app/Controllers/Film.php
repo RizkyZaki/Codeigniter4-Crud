@@ -15,6 +15,9 @@ class Film extends BaseController
         $this->filmModel = new FilmModel();
     }
 
+    public function dashboard(){
+        echo view ('Film/dashboard');
+    }
     
     public function index()
     {

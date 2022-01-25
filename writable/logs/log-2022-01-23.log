@@ -1,0 +1,241 @@
+CRITICAL - 2022-01-23 20:51:01 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 21:03:06 --> Undefined property: App\Controllers\Home::$UsersModel
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 21:03:09 --> Undefined property: App\Controllers\Home::$UsersModel
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 21:10:23 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 21:14:57 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 21:24:14 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:10:33 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:14:26 --> Too few arguments to function App\Controllers\Home::delete_profile(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete_profile()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:16:10 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:16:28 --> Undefined variable $id
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 54)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:16:48 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\xampp\htdocs\ci4app\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\xampp\htdocs\ci4app\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(54): CodeIgniter\BaseModel->delete(NULL)
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-23 22:17:18 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\xampp\htdocs\ci4app\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\xampp\htdocs\ci4app\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(58): CodeIgniter\BaseModel->delete(NULL)
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-23 22:18:06 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:19:44 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:20:45 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:20:55 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:25:12 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:25:22 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:26:57 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:27:36 --> Call to a member function delete() on null
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:28:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:29:33 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:30:05 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:31:55 --> syntax error, unexpected single-quoted string "id", expecting variable
+#0 C:\xampp\htdocs\ci4app\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ci4app\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-23 22:32:24 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:33:09 --> Too few arguments to function App\Controllers\Home::delete(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:33:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 58)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:34:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:35:17 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-23 22:35:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::delete()
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-23 22:38:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 IS NULL' at line 3
+CRITICAL - 2022-01-23 22:38:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 IS NULL' at line 3
+#0 C:\xampp\htdocs\ci4app\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4app\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4app\system\Model.php(728): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(55): CodeIgniter\Model->__call('getWhere', Array)
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-23 22:38:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 IS NULL' at line 2
+CRITICAL - 2022-01-23 22:38:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 IS NULL' at line 2
+#0 C:\xampp\htdocs\ci4app\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\xampp\htdocs\ci4app\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\xampp\htdocs\ci4app\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ci4app\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(60): CodeIgniter\BaseModel->delete(NULL)
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete()
+#8 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-23 22:52:25 --> Undefined property: App\Controllers\Home::$UsersModel
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete('1')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-23 22:52:59 --> CodeIgniter\Model::__construct(): Argument #1 ($db) must be of type ?CodeIgniter\Database\ConnectionInterface, string given, called in C:\xampp\htdocs\ci4app\app\Controllers\Home.php on line 51
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Home.php(51): CodeIgniter\Model->__construct('1')
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Home->delete('1')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
