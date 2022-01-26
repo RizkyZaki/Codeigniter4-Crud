@@ -244,6 +244,13 @@
                         </div>
                     </div>
                     <div class="input-box">
+                        <label class="label-text">Email</label>
+                        <div class="form-group">
+                            <span class="la la-user form-icon"></span>
+                            <input class="form-control form-control-styled" type="text" name="email" id="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="input-box">
                         <label class="label-text">Your Name</label>
                         <div class="form-group">
                             <span class="la la-user form-icon"></span>
@@ -269,7 +276,7 @@
                         <label class="label-text">Confirm Password</label>
                         <div class="form-group">
                             <span class="la la-lock form-icon"></span>
-                            <input class="form-control form-control-styled" type="password" name="password_conf" id="password_conf" placeholder="Enter password">
+                            <input class="form-control form-control-styled" type="password" name="password_conf" id="password_conf" placeholder="Confirm password">
                         </div>
                     </div>
                     <div class="btn-box">

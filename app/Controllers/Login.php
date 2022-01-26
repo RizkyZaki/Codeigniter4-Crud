@@ -23,6 +23,7 @@ class Login extends BaseController
                     'id'    => $dataUser['id'],
                     'username' => $dataUser['username'],
                     'name' => $dataUser['name'],
+                    // 'email' => $dataUser['email'],
                     'logged_in' => TRUE
                 ]);
                 return redirect()->to(base_url('dashboard'));

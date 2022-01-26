@@ -18,6 +18,15 @@ class Register extends BaseController
                     'is_unique' => 'Username has been used before'
                 ]
             ],
+            'email' => [
+                'rules' => 'required|min_length[4]|max_length[20]|is_unique[users.email]',
+                'errors' => [
+                    'required' => '{field} Must Be Filled',
+                    'min_length' => '{field} Minimum 4 Characters',
+                    'max_length' => '{field} Maximum 20 Characters',
+                    'is_unique' => 'Email has been used before'
+                ]
+            ],
             'password' => [
                 'rules' => 'required|min_length[8]|max_length[50]',
                 'errors' => [ 
@@ -48,7 +57,8 @@ class Register extends BaseController
         $users->insert([
             'username' => $this->request->getVar('username'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
-            'name' => $this->request->getVar('name')
+            'name' => $this->request->getVar('name'),
+            'email' => $this->request->getVar('email')
         ]);
         return redirect()->to('/');
     }

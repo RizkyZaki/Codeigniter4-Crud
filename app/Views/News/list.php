@@ -52,14 +52,14 @@
                 </div>
             </li>
             <li class="sidebar-heading pt-3">Main</li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= base_url(); ?>/dashboard">
                     <i class="la la-dashboard font-size-18 mr-1"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/list">
+            <li class="nav-item active">
+                <a class="nav-link" href="dashboard-booking.html">
                     <i class="la la-list font-size-18 mr-1"></i>
                     <span>List News</span>
                 </a>
@@ -112,9 +112,38 @@
                 <div class="container-fluid dashboard-inner-body-container">
                     <div class="breadcrumb-content d-sm-flex align-items-center justify-content-between mb-4">
                         <div class="section-heading">
-                            <h2 class="sec__title font-size-24 mb-0">HELLO <?= session()->get('username');?>!</h2>
+                            <h2 class="sec__title font-size-24 mb-0">List News</h2>
                         </div>
                     </div><!-- end breadcrumb-content -->
+                </div>
+                <div class="row mx-2">
+                    <div class="col-lg-12">
+                        <div class="block-card dashboard-card mb-4">
+                            <div class="block-card-header">
+                                <h2 class="widget-title pb-0">News</h2>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>MPL akan Segera dimulai</td>
+                                    <td>Games</td>
+                                    <td>
+                                        <a href="#" class="btn bg-rgb-danger font-weight-small mr-2"><i class="la la-edit mr-1"></i>Edit</a>
+                                        <a href="#" class="btn bg-rgb-success font-weight-small"><i class="la la-bars mr-1"></i>Detail</a>
+                                        <a href="#" class="btn bg-rgb-danger font-weight-small"><i class="la la-trash mr-1"></i>Delete</a>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>   

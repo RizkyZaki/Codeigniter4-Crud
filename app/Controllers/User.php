@@ -20,7 +20,8 @@ class User extends BaseController
     {
         // $users = new UsersModel();
         $id = $this->request->getVar('id');
-        // $username = $this->request->getVar('username');
+        $username = $this->request->getVar('username');
+        $email = $this->request->getVar('email');
         $name = $this->request->getVar('name');
         $dataUser = $this->users->where([
             'id' => $id,
@@ -28,7 +29,8 @@ class User extends BaseController
 
         $validation =  \Config\Services::validation();
         $validation->setRules([
-            'name' => 'required'
+            'name' => 'required',
+            'email' => 'required'
         ]);
         $isDataValid = $validation->withRequest($this->request)->run();
         if ($isDataValid){
@@ -36,13 +38,16 @@ class User extends BaseController
             session()->set([
                 'id'    => $dataUser['id'],
                 'username' => $dataUser['username'],
-                'name' => $dataUser['name']
+                'name' => $dataUser['name'],
+                'email' => $dataUser['email'],
             ]);
             $this->users->update($id, [
                 'name' => $this->request->getVar('name'),
+                'email' => $this->request->getVar('email'),
             ]);
             $_SESSION['id'] = $id;
             $_SESSION['name'] = $name;
+            $_SESSION['email'] = $email;
             return redirect()->to(base_url('profile'));
         }
     }
