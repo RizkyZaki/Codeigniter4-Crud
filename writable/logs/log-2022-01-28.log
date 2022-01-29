@@ -1,0 +1,12 @@
+ERROR - 2022-01-28 21:07:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	`foto` VARCHAR(255) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updat...' at line 5
+ERROR - 2022-01-28 21:07:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	`foto` VARCHAR(255) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updat...' at line 5
+ERROR - 2022-01-28 21:11:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	`foto` VARCHAR(255) NOT NULL,
+	`created_at` DATETIME NULL,
+	`updat...' at line 5

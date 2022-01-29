@@ -80,7 +80,7 @@
                         <div class="col-sm-10">
                             <div class="mb-3">
                                 <label for="poster" class="form-label text-white"><i class="bi bi-upload"></i>Ubah Gambar</label>
-                                <input class="form-control <?= ($validation->hasError('poster')) ? 'is-invalid' : ''; ?>"" type="file" id="poster" name="poster" >
+                                <input class="form-control <?= ($validation->hasError('poster')) ? 'is-invalid' : ''; ?>" type="file" id="poster" name="poster" >
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('poster'); ?>
                                 </div>

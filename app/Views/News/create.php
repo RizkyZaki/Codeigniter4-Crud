@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Template CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/line-awesome.min.css">
@@ -114,20 +114,29 @@
                         <div class="block-card mb-4">
                             <div class="block-card-header">
                                 <h2 class="widget-title">Add New Post</h2>
+                                <?php if (session()->getFlashdata('Pesan')) : ?>
+                                    <div class="alert alert-success" role="alert">
+                                        <?= session()->getFlashdata('Pesan'); ?> 
+                                    </div>
+                                <?php endif; ?>
                                 <div class="stroke-shape"></div>
                             </div><!-- end block-card-header -->
                             <div class="block-card-body">
-                                <form method="post" class="form-box row">
+                                <form method="post" action="<?= base_url(); ?>/News/save" class="form-box row" enctype="multipart/form-data">
+                                    <?= csrf_field(); ?>
                                     <div class="col-lg-12">
                                         <div class="input-box">
                                             <label class="label-text">News Title</label>
                                             <div class="form-group">
                                                 <span class="la la-briefcase form-icon"></span>
-                                                <input class="form-control" type="text" name="text" placeholder="Title">
+                                                <input class="form-control" <?= ($validation->hasError('judul')) ? 'is-invalid' : ''; ?> type="text" name="judul" id="judul" value="<?= old('judul'); ?>" placeholder="Title">
+                                                <div class="invalid-feedback">
+                                                    <?= $validation->getError('judul'); ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
-                                    <div class="col-lg-12">
+                                    <!-- <div class="col-lg-12">
                                         <div class="input-box">
                                             <label class="label-text">Add Category</label>
                                             <div class="form-group user-chosen-select-container">
@@ -144,21 +153,20 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div><!-- end col-lg-12 -->
+                                    </div>end col-lg-12 -->
                                     <div class="col-lg-12">
                                         <div class="input-box">
                                             <label class="label-text">Description</label>
                                                 <div class="form-group">
-                                                    <textarea class="message-control form-control user-text-editor" name="message"></textarea>
+                                                    <textarea class="message-control form-control user-text-editor" name="isi" id="isi" value="<?= old('isi'); ?>"></textarea>
                                                 </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
                                     <div class="col-lg-12">
                                         <div class="input-box">
-                                            <label class="label-text">Image</label>
-                                            <div class="file-upload-wrap file-upload-wrap-4">
-                                                <input type="file" name="files[]" class="multi file-upload-input with-preview" multiple maxlength="3">
-                                                <span class="file-upload-text"><i class="la la-upload mr-2"></i>Upload image</span>
+                                            <input class="form-control <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" type="file" id="foto" name="foto">
+                                            <div class="invalid-feedback">
+                                                <?= $validation->getError('foto'); ?>
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
@@ -193,6 +201,8 @@
                 <script src="js/chart.min.js"></script>
                 <script src="js/line-chart.js"></script>
                 <script src="js/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

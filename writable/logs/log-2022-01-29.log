@@ -1,0 +1,47 @@
+CRITICAL - 2022-01-29 05:08:00 --> Too few arguments to function App\Controllers\News::edit(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->edit()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 05:24:48 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\ci4app\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('News/edit', Array, true)
+#3 C:\xampp\htdocs\ci4app\app\Controllers\News.php(106): view('News/edit', Array)
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->edit('daftar-lengkap-...')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-29 05:28:20 --> Too few arguments to function App\Controllers\News::update(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 05:31:32 --> Too few arguments to function App\Controllers\News::update(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 05:32:30 --> Too few arguments to function App\Controllers\News::update(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 05:40:42 --> Too few arguments to function App\Controllers\News::update(), 0 passed in C:\xampp\htdocs\ci4app\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 05:41:46 --> Undefined property: App\Controllers\News::$filmModel
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 133)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('2')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -43,10 +43,14 @@ $routes->post('/edit', 'User::edit', ['filter' => 'usersAuth']);
 $routes->post('delete/(:segment)', 'User::delete/$1', ['filter' => 'usersAuth']);
 $routes->get('/create', 'News::create', ['filter' => 'usersAuth']);
 $routes->get('/list', 'News::list', ['filter' => 'usersAuth']);
+$routes->get('/news/(:any)', 'News::detail/$1', ['filter' => 'usersAuth']);
+$routes->add('/delete/(:segment)', 'News::delete/$1');
+$routes->get('/edit/(:segment)', 'News::edit/$1');
 $routes->get('/film/edit/(:segment)', 'Film::edit/$1');
 $routes->delete('/film/(:num)', 'Film::delete/$1');
 $routes->get('/film/(:any)', 'Film::detail/$1', ['filter' => 'usersAuth']);
 $routes->get('/Film', 'Film::index', ['filter' => 'usersAuth']);
+$routes->get('/Film/create', 'Film::create', ['filter' => 'usersAuth']);
 
 /*
  * --------------------------------------------------------------------
