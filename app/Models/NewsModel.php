@@ -7,8 +7,9 @@ use CodeIgniter\Model;
 class NewsModel extends Model
 {
     protected $table = 'news';
+    protected $primaryKey = 'id';
     protected $useTimestamps = true;
-    protected $allowedFields = ['judul', 'slug', 'isi', 'foto' ];
+    protected $allowedFields = ['judul', 'slug', 'isi', 'foto', 'id_kategori' ];
 
     public function getNews($slug = false)
     {

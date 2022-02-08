@@ -113,7 +113,7 @@
                     <div class="col-lg-12">
                         <div class="block-card mb-4">
                             <div class="block-card-header">
-                                <h2 class="widget-title">Add New Post</h2>
+                                <h2 class="widget-title">Add News</h2>
                                 <?php if (session()->getFlashdata('Pesan')) : ?>
                                     <div class="alert alert-success" role="alert">
                                         <?= session()->getFlashdata('Pesan'); ?> 
@@ -139,22 +139,27 @@
                                     <!-- <div class="col-lg-12">
                                         <div class="input-box">
                                             <label class="label-text">Add Category</label>
+                                            <div class="form-group">
+                                                <span class="la la-briefcase form-icon"></span>
+                                                <input class="form-control" name="id_kategori" id="id_kategori">
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-lg-12">
+                                        <div class="input-box">
+                                            <label class="label-text">Add Category</label>
                                             <div class="form-group user-chosen-select-container">
                                                 <span class="la la-briefcase form-icon"></span>
-                                                <select class="user-chosen-select">
+                                                <select class="user-chosen-select" name="id_kategori" id="id_kategori">
                                                     <option value="">Select a Category</option>
-                                                    <option value="">Health</option>
-                                                    <option value="">Politics</option>
-                                                    <option value="">World</option>
-                                                    <option value="">Music</option>
-                                                    <option value="">Music</option>
-                                                    <option value="">Sports</option>
-                                                    <option value="">Games</option>
+                                                    <option value="">Hiburan</option>
+                                                    <option value="">Musik</option>
+                                                    <option value="">Politik</option>
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>end col-lg-12 -->
-                                    <div class="col-lg-12">
+                                    </div> 
+                                    <div class="col-lg-12"> 
                                         <div class="input-box">
                                             <label class="label-text">Description</label>
                                                 <div class="form-group">
@@ -164,6 +169,7 @@
                                     </div><!-- end col-lg-12 -->
                                     <div class="col-lg-12">
                                         <div class="input-box">
+                                            <label class="label-text">Upload Image</label>
                                             <input class="form-control <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" type="file" id="foto" name="foto">
                                             <div class="invalid-feedback">
                                                 <?= $validation->getError('foto'); ?>

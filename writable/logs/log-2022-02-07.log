@@ -1,0 +1,9 @@
+CRITICAL - 2022-02-07 20:46:38 --> Invalid file: Landing/login.php
+#0 C:\xampp\htdocs\ci4app\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Landing/login.p...')
+#1 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Landing/login', Array, true)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\Login.php(11): view('Landing/login')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

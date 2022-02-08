@@ -7,6 +7,10 @@ use App\Models\UsersModel;
 class Login extends BaseController
 {
 
+    public function index(){
+        return view('Pages/login');
+    }
+
     public function process()
     {
         $users = new UsersModel();
@@ -23,16 +27,16 @@ class Login extends BaseController
                     'id'    => $dataUser['id'],
                     'username' => $dataUser['username'],
                     'name' => $dataUser['name'],
-                    // 'email' => $dataUser['email'],
+                    'email' => $dataUser['email'],
                     'logged_in' => TRUE
                 ]);
                 return redirect()->to(base_url('dashboard'));
             } else {
-                session()->setFlashdata('error', 'Username & Password Salah');
+                session()->setFlashdata('login_salah', 'Username & Password Salah');
                 return redirect()->back();
             }
         } else {
-            session()->setFlashdata('error', 'Username & Password Salah');
+            session()->setFlashdata('login_salah', 'Username & Password Salah');
             return redirect()->back();
         }
     }

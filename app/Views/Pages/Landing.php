@@ -57,11 +57,11 @@
                         </select>
                     </div>
                     <p class="login-and-signup-wrap">
-                        <a href="#" data-toggle="modal" data-target="#loginModal">
+                        <a href="<?=base_url()?>/login">
                             <span class="mr-1 la la-sign-in"></span>Login
                         </a>
                         <span class="or-text px-2">or</span>
-                        <a href="#" data-toggle="modal" data-target="#signUpModal">
+                        <a href="<?=base_url()?>/register">
                             <span class="mr-1 la la-user-plus"></span>Sign Up
                         </a>
                     </p>
@@ -175,7 +175,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade modal-container login-form" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+<div class="modal fade modal-container login-form" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="false">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header align-items-center mh-bg">
@@ -185,7 +185,6 @@
                 </button>
             </div>
             <div class="modal-body">
-            
                 <form method="post" action="<?= base_url(); ?>/Login/process" class="form-box">
                 <?= csrf_field(); ?>
                     <div class="input-box">
@@ -207,7 +206,7 @@
                             <i class="la la-sign-in mr-1"></i> Login to Account
                         </button>
                         <p class="sub-text-box text-right pt-1 font-weight-medium font-size-14">
-                            New to Listhub? <a class="text-color-2 signup-btn" href="javascript:void(0)">Create account</a>
+                            New to Listhub? <a class="text-color-2 signup-btn" href="">Create account</a>
                         </p>
                     </div>
                 </form>
@@ -217,81 +216,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade modal-container signup-form" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header align-items-center mh-bg-2">
-                <h5 class="modal-title" id="signUpModalTitle">Welcome! create your account</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="la la-times-circle"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-            <?php if (!empty(session()->getFlashdata('error'))) : ?>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <h4>ALERT!!</h4>
-                        </hr />
-                        <?php echo session()->getFlashdata('error'); ?>
-                    </div>
-                <?php endif; ?>
-                <form method="post" action="<?= base_url(); ?>/Register/process" class="form-box">
-                <?= csrf_field(); ?>
-                    <div class="input-box">
-                        <label class="label-text">Username</label>
-                        <div class="form-group">
-                            <span class="la la-user form-icon"></span>
-                            <input class="form-control form-control-styled" type="text" name="username" id="username" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <label class="label-text">Email</label>
-                        <div class="form-group">
-                            <span class="la la-user form-icon"></span>
-                            <input class="form-control form-control-styled" type="text" name="email" id="email" placeholder="Email Address">
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <label class="label-text">Your Name</label>
-                        <div class="form-group">
-                            <span class="la la-user form-icon"></span>
-                            <input class="form-control form-control-styled" type="text" name="name" id="name" placeholder="Name">
-                        </div>
-                    </div>
-                    <!-- <div class="input-box">
-                        <label class="label-text">Email</label>
-                        <div class="form-group">
-                            <span class="la la-envelope form-icon"></span>
-                            <input class="form-control form-control-styled" type="email" name="text" placeholder="Email address">
-                        </div>
-                    </div> -->
-                    <div class="input-box">
-                        <label class="label-text">Password</label>
-                        <div class="form-group">
-                            <span class="la la-lock form-icon"></span>
-                            <input class="form-control form-control-styled" type="password" name="password" id="password" placeholder="Enter password">
-                        </div>
-                        <p class="font-size-14 mt-n2">Your password must be at least 8 characters long and must contain letters, numbers and special characters. Cannot contain whitespace.</p>
-                    </div>
-                    <div class="input-box">
-                        <label class="label-text">Confirm Password</label>
-                        <div class="form-group">
-                            <span class="la la-lock form-icon"></span>
-                            <input class="form-control form-control-styled" type="password" name="password_conf" id="password_conf" placeholder="Confirm password">
-                        </div>
-                    </div>
-                    <div class="btn-box">
-                        <button type="submit" class="theme-btn gradient-btn w-100">
-                            <i class="la la-user-plus mr-1"></i> Register Account
-                        </button>
-                        <p class="sub-text-box text-right pt-1 font-weight-medium font-size-14">
-                            Already on Listhub? <a class="text-color-2 login-btn" href="javascript:void(0)">Log in</a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <!-- Modal -->
 <!-- <div class="modal fade modal-container recover-form" id="recoverModal" tabindex="-1" role="dialog" aria-labelledby="recoverModalTitle" aria-hidden="true">

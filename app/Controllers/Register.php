@@ -6,6 +6,10 @@ use App\Models\UsersModel;
 
 class Register extends BaseController
 {
+    public function index()
+    {
+        return view('Pages/register');
+    }
     public function process()
     {
         if (!$this->validate([
@@ -60,6 +64,6 @@ class Register extends BaseController
             'name' => $this->request->getVar('name'),
             'email' => $this->request->getVar('email')
         ]);
-        return redirect()->to('/');
+        return redirect()->to('/login');
     }
 }

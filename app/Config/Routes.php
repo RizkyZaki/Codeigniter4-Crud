@@ -31,11 +31,11 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// $routes->get('/Login', 'Login::index');
-// $routes->get('/Register', 'Register::index');
 $routes->post('/login/process', 'Login::process');
+// $routes->post('/register/process', 'Register::process');
 $routes->get('/logout', 'Login::logout');
-// $routes->get('/home', 'Home::index', ['filter' => 'usersAuth']);
+$routes->get('/login', 'Login::index');
+$routes->get('/register', 'Register::index');
 $routes->get('/', 'Landing::index');
 $routes->get('/dashboard', 'News::dashboard', ['filter' => 'usersAuth']);
 $routes->add('/profile', 'User::profile', ['filter' => 'usersAuth']);
@@ -44,13 +44,8 @@ $routes->post('delete/(:segment)', 'User::delete/$1', ['filter' => 'usersAuth'])
 $routes->get('/create', 'News::create', ['filter' => 'usersAuth']);
 $routes->get('/list', 'News::list', ['filter' => 'usersAuth']);
 $routes->get('/news/(:any)', 'News::detail/$1', ['filter' => 'usersAuth']);
-$routes->add('/delete/(:segment)', 'News::delete/$1');
+$routes->add('delete/(:segment)', 'News::delete/$1');
 $routes->get('/edit/(:segment)', 'News::edit/$1');
-$routes->get('/film/edit/(:segment)', 'Film::edit/$1');
-$routes->delete('/film/(:num)', 'Film::delete/$1');
-$routes->get('/film/(:any)', 'Film::detail/$1', ['filter' => 'usersAuth']);
-$routes->get('/Film', 'Film::index', ['filter' => 'usersAuth']);
-$routes->get('/Film/create', 'Film::create', ['filter' => 'usersAuth']);
 
 /*
  * --------------------------------------------------------------------

@@ -59,6 +59,7 @@ class News extends BaseController
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->newsModel->save([
             'judul' => $this->request->getVar('judul'),
+            'id_kategori' => $this->request->getVar('id_kategori'),
             'slug' => $slug,
             'isi' => $this->request->getVar('isi'),
             'foto' => $namaFoto
@@ -70,10 +71,19 @@ class News extends BaseController
     }
     
     public function list(){
+
         $data = [
             'news'  => $this->newsModel->getNews()
         ];
-        
+
+        // $db      = \Config\Database::connect();
+        // $builder = $db->table('news');
+        // $builder->select('*');
+        // $builder->join('kategori', 'kategori.id = news.id_kategori');
+        // $query = $builder->get();
+
+        // $data['news'] = $query->getResultArray();
+                
         return view('News/list', $data);
     }
 
@@ -107,27 +117,27 @@ class News extends BaseController
     }
     public function update($id)
     {
-        // cek judul
-        // $newsLama = $this->newsModel->getNews($this->request->getVar('slug'));
-        // if($newsLama['judul'] == $this->request->getVar('judul')) 
-        // {
-        //     $rule_judul = 'required';
-        // } else {
-        //     $rule_judul = 'required';
-        // }
+        
+        $newsLama = $this->newsModel->getNews($this->request->getVar('slug'));
+        if($newsLama['judul'] == $this->request->getVar('judul')) 
+        {
+            $rule_judul = 'required';
+        } else {
+            $rule_judul = 'required';
+        }
 
-        // // Validation
-        // if (!$this->validate([
-        //     'judul' => [
-        //         'rules' => $rule_judul,
-        //         'errors' => [
-        //             'required' => '{field} harus Diisi'
-        //         ]
-        //     ]
-        // ])) {
-        //     $validation = \Config\Services::validation();
-        //     return redirect()->to('/edit' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
-        // }
+        // Validation
+        if (!$this->validate([
+            'judul' => [
+                'rules' => $rule_judul,
+                'errors' => [
+                    'required' => '{field} harus Diisi'
+                ]
+            ]
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('/edit' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+        }
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->newsModel->save([

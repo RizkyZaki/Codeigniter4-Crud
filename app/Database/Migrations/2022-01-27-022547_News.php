@@ -22,8 +22,7 @@ class News extends Migration
 				'constraint'     => '255',
 			],
 			'isi'          => [
-				'type'           => 'VARCHAR',
-				'constraint'	 => '1000',
+				'type'           => 'TEXT',
 			],
 			'foto'             => [
 				'type'           => 'VARCHAR',

@@ -38,7 +38,7 @@
     START BLOG AREA
 ================================= -->
 <section class="blog-area section-padding">
-    <div class="container">
+    <div class="container mx-auto">
         <div class="row">
             <div class="col-lg-10">
                 <div class="card-item single-card">
@@ -87,19 +87,19 @@
 
 
 <!-- Template JS Files -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/animated-headline.js"></script>
-<script src="js/chosen.min.js"></script>
-<script src="js/moment.min.js"></script>
-<script src="js/datedropper.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.lazy.min.js"></script>
-<script src="js/main.js"></script>
+<script src="<?= base_url('js/jquery-3.4.1.min.js"'); ?>"></script>
+<script src="<?= base_url('js/jquery-ui.js"'); ?>"></script>
+<script src="<?= base_url('js/popper.min.js'); ?>"></script>
+<script src="<?= base_url('js/bootstrap.min.js'); ?>"></script>
+<script src="<?= base_url('js/owl.carousel.min.js'); ?>"></script>
+<script src="<?= base_url('js/jquery.fancybox.min.js'); ?>"></script>
+<script src="<?= base_url('js/animated-headline.js'); ?>"></script>
+<script src="<?= base_url('js/chosen.min.js'); ?>"></script>
+<script src="<?= base_url('js/moment.min.js'); ?>"></script>
+<script src="<?= base_url('js/datedropper.min.js'); ?>"></script>
+<script src="<?= base_url('js/waypoints.min.js'); ?>"></script>
+<script src="<?= base_url('js/jquery.counterup.min.js'); ?>"></script>
+<script src="<?= base_url('js/jquery.lazy.min.js'); ?>"></script>
+<script src="<?= base_url('js/main.js'); ?>"></script>
 </body>
 </html>

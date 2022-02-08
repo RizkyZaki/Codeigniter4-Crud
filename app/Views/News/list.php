@@ -134,11 +134,11 @@
                                     <?php foreach($news as $n) : ?>
                                         <tr>
                                             <td><?= $n['judul']; ?></td>
-                                            <td>Belum Tersedia</td>
+                                            <td>Belum Ada Mas</td>
                                             <td>
-                                                <a href="<?= base_url();?>/edit/<?= $n['slug'];?>" class="btn bg-rgb-danger font-weight-small mr-2"><i class="la la-edit mr-1"></i>Edit</a>
+                                                <a href="<?= base_url();?>/edit/<?= $n['slug'];?>" class="btn bg-rgb-danger font-weight-small "><i class="la la-edit mr-1"></i>Edit</a>
                                                 <a href="<?= base_url(); ?>/news/<?= $n['slug']; ?>" class="btn bg-rgb-success font-weight-small"><i class="la la-bars mr-1"></i>Detail</a>
-                                                <a href="<?= base_url('delete/' .$n['id']); ?>" class="btn bg-rgb-danger font-weight-small" onclick="return confirm('apakah anda yakin?');"><i class="la la-trash mr-1"></i>Delete</a>
+                                                <a href="<?= base_url(); ?>/delete/<?= $n['id'];?>" class="btn bg-rgb-danger font-weight-small" onclick="return confirm('apakah anda yakin?');"><i class="la la-trash mr-1"></i>Delete</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
