@@ -151,10 +151,9 @@
                                             <div class="form-group user-chosen-select-container">
                                                 <span class="la la-briefcase form-icon"></span>
                                                 <select class="user-chosen-select" name="id_kategori" id="id_kategori">
-                                                    <option value="">Select a Category</option>
-                                                    <option value="">Hiburan</option>
-                                                    <option value="">Musik</option>
-                                                    <option value="">Politik</option>
+                                                <?php foreach($kategori as $k) : ?>
+                                                    <option value="<?=$k['id_kat'];?>"><?=$k['kategori'];?></option>
+                                                <?php endforeach; ?>
                                                 </select>
                                             </div>
                                         </div>

@@ -52,20 +52,16 @@
                     <div class="card-content">
                         <h4 class="card-title font-size-25 mb-0"><?= $news['judul']; ?></h4>
                         <div class="d-flex flex-wrap align-items-center pt-3">
-                            <!-- <a href="#" class="d-flex align-items-center text-gray mr-3">
-                                <div class="user-thumb user-thumb-sm d-inline-block mr-2">
-                                    <img src="images/avatar-img.jpg" alt="author-img">
-                                </div>
+                            <a href="#" class="d-flex align-items-center text-gray mr-3">
                                 <span class="font-weight-medium">By Alex Smith</span>
                             </a>
                             <ul class="listing-meta d-flex align-items-center pt-0">
                                 <li class="mr-3">
-                                    <i class="la la-calendar mr-1"></i>July 28, 2020
+                                    <i class="la la-calendar mr-1"></i>Created at <?=$news['created_at'];?>
                                 </li>
                                 <li class="mr-3">
                                     <i class="la la-tags mr-1"></i>
-                                    <a href="#" class="listing-cat-link">Travel</a>,
-                                    <a href="#" class="listing-cat-link">News</a>
+                                    <a href="#" class="listing-cat-link">Belum Ada</a>,
                                 </li>
                                 <li class="mr-3">
                                     <i class="la la-comment mr-1"></i>
@@ -74,7 +70,7 @@
                                 <li>
                                     <i class="la la-share-alt mr-1"></i>
                                     <a href="#" class="listing-cat-link">55 Share</a>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                         <p class="card-sub mt-3"><?= $news['isi']; ?></p>

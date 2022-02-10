@@ -32,11 +32,11 @@ class Login extends BaseController
                 ]);
                 return redirect()->to(base_url('dashboard'));
             } else {
-                session()->setFlashdata('login_salah', 'Username & Password Salah');
+                session()->setFlashdata('login_salah', 'Login Gagal');
                 return redirect()->back();
             }
         } else {
-            session()->setFlashdata('login_salah', 'Username & Password Salah');
+            session()->setFlashdata('login_salah', 'Login Gagal');
             return redirect()->back();
         }
     }

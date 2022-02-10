@@ -19,4 +19,12 @@ class NewsModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
+
+    function getRelasi()
+    {
+        $builder = $this->db->table('news');
+        $builder->join('kategori', 'kategori.id_kat = news.id_kategori');
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
 }

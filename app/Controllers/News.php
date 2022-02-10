@@ -3,13 +3,16 @@
 namespace App\Controllers;
 
 use App\Models\NewsModel;
+use App\Models\KategoriModel;
 
 class News extends BaseController
 {
     protected $newsModel;
+    protected $kategoriModel;
     public function __construct()
     {
         $this->newsModel = new NewsModel();
+        $this->kategoriModel = new KategoriModel();
     }
     public function dashboard(){
         echo view('News/dashboard');
@@ -18,7 +21,8 @@ class News extends BaseController
     public function create(){
         session();
         $data = [
-            'validation' => \Config\Services::validation()
+            'validation' => \Config\Services::validation(),
+            'kategori' => $this->kategoriModel->findAll(),
         ];
         echo view('News/create', $data);
     }
@@ -37,7 +41,7 @@ class News extends BaseController
                 'errors' => [
                     'is_image' => 'Yang dipilih bukan gambar',
                     'mime_in' => 'Yang dipilih bukan gambar'
-                ]
+                ] 
             ]
         ])) {
             // $validation = \Config\Services::validation();
@@ -72,9 +76,9 @@ class News extends BaseController
     
     public function list(){
 
-        $data = [
-            'news'  => $this->newsModel->getNews()
-        ];
+        // $data = [
+        //     'news'  => $this->newsModel->getNews()
+        // ];
 
         // $db      = \Config\Database::connect();
         // $builder = $db->table('news');
@@ -82,7 +86,7 @@ class News extends BaseController
         // $builder->join('kategori', 'kategori.id = news.id_kategori');
         // $query = $builder->get();
 
-        // $data['news'] = $query->getResultArray();
+        $data['news'] = $this->newsModel->getRelasi();
                 
         return view('News/list', $data);
     }
@@ -91,7 +95,7 @@ class News extends BaseController
     {
         $data = [
             'title' => 'Detail Film',
-            'news'  => $this->newsModel->getNews($slug)
+            'news'  => $this->newsModel->getNews($slug),
         ];
         if(empty($data['news']))
         {

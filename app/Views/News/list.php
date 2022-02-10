@@ -134,7 +134,7 @@
                                     <?php foreach($news as $n) : ?>
                                         <tr>
                                             <td><?= $n['judul']; ?></td>
-                                            <td>Belum Ada Mas</td>
+                                            <td><?=$n['kategori']; ?></td>
                                             <td>
                                                 <a href="<?= base_url();?>/edit/<?= $n['slug'];?>" class="btn bg-rgb-danger font-weight-small "><i class="la la-edit mr-1"></i>Edit</a>
                                                 <a href="<?= base_url(); ?>/news/<?= $n['slug']; ?>" class="btn bg-rgb-success font-weight-small"><i class="la la-bars mr-1"></i>Detail</a>
