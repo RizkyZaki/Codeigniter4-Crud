@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Template CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/line-awesome.min.css">
@@ -52,7 +52,7 @@
                 </div>
             </li>
             <li class="sidebar-heading pt-3">Main</li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= base_url(); ?>/dashboard">
                     <i class="la la-dashboard font-size-18 mr-1"></i>
                     <span>Dashboard</span>
@@ -89,7 +89,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/logout"">
+                <a class="nav-link" href="<?= base_url(); ?>/logout">
                     <i class="la la-power-off font-size-18 mr-1"></i>
                     <span>Logout</span>
                 </a>
@@ -115,12 +115,36 @@
                         </li>
                     </ul>
                 </nav><!-- end dashboard-topbar -->
-                <div class="container-fluid dashboard-inner-body-container">
-                    <div class="breadcrumb-content d-sm-flex align-items-center justify-content-between mb-4">
-                        <div class="section-heading">
-                            <h2 class="sec__title font-size-24 mb-0">HELLO <?= session()->get('username');?>!</h2>
-                        </div>
-                    </div><!-- end breadcrumb-content -->
+                <div class="row mx-2">
+                    <div class="col-lg-12">
+                        <div class="block-card mb-4">
+                            <div class="block-card-header">
+                                <h2 class="widget-title">Add Category</h2>
+                                <div class="stroke-shape mb-3"></div>
+                            </div><!-- end block-card-header -->
+                            <div class="block-card-body">
+                                <form method="post" action="<?= base_url(); ?>/Category/addCategory" class="form-box row">
+                                    <?= csrf_field(); ?>
+                                    <div class="col-lg-12">
+                                        <div class="input-box">
+                                            <label class="label-text">Category Name</label>
+                                            <div class="form-group">
+                                                <span class="la la-tags form-icon"></span>
+                                                <input class="form-control <?= ($validation->hasError('Kategori')) ? 'is-invalid' : ''; ?>" type="text" name="nama_kategori" id="nama_kategori" placeholder="Category Name">
+                                                <div class="invalid-feedback">
+                                                    <?= $validation->getError('Kategori'); ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-box pt-1 mt-4">
+                                            <button type="submit" class="theme-btn gradient-btn border-0">Add Category<i
+                                            class="la la-arrow-right ml-2"></i></button>
+                                        </div>
+                                    </div><!-- end col-lg-12 -->
+                                </form>
+                            </div><!-- end block-card-body -->
+                        </div><!-- end block-card -->
+                    </div>
                 </div>
             </div>
         </div>   
@@ -144,6 +168,8 @@
                 <script src="js/chart.min.js"></script>
                 <script src="js/line-chart.js"></script>
                 <script src="js/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

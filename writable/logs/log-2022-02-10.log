@@ -1,0 +1,75 @@
+CRITICAL - 2022-02-10 03:27:20 --> Undefined array key "id"
+#0 C:\xampp\htdocs\ci4app\app\Views\News\edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 56)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('News/edit', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\News.php(120): view('News/edit', Array)
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->edit('ifan-banteng')
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-10 03:49:01 --> There is no data to update.
+#0 C:\xampp\htdocs\ci4app\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\ci4app\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\xampp\htdocs\ci4app\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\xampp\htdocs\ci4app\app\Controllers\News.php(154): CodeIgniter\Model->update(Array)
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('16')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-10 03:50:45 --> There is no data to update.
+#0 C:\xampp\htdocs\ci4app\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\ci4app\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\News.php(163): CodeIgniter\Model->update('16', Array)
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('16')
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-10 03:51:59 --> There is no data to update.
+#0 C:\xampp\htdocs\ci4app\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\ci4app\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\ci4app\app\Controllers\News.php(163): CodeIgniter\Model->update('16', Array)
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('16')
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-10 03:52:26 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+#0 C:\xampp\htdocs\ci4app\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray('16', 'insert')
+#1 C:\xampp\htdocs\ci4app\system\Model.php(625): CodeIgniter\BaseModel->insert('16', false)
+#2 C:\xampp\htdocs\ci4app\system\BaseModel.php(658): CodeIgniter\Model->insert('16', false)
+#3 C:\xampp\htdocs\ci4app\app\Controllers\News.php(165): CodeIgniter\BaseModel->save('16', Array)
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('16')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-10 03:59:40 --> There is no data to update.
+#0 C:\xampp\htdocs\ci4app\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\ci4app\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\xampp\htdocs\ci4app\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\xampp\htdocs\ci4app\app\Controllers\News.php(165): CodeIgniter\Model->update(Array)
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('16')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-10 04:47:01 --> unlink(img/default.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\xampp\\htdocs...', 119)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\News.php(119): unlink('img/default.png')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->delete('17')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 04:47:50 --> unlink(img/default.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\xampp\\htdocs...', 119)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\News.php(119): unlink('img/default.png')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->delete('17')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

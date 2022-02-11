@@ -38,6 +38,8 @@ $routes->get('/login', 'Login::index');
 $routes->get('/register', 'Register::index');
 $routes->get('/', 'Landing::index');
 $routes->get('/dashboard', 'News::dashboard', ['filter' => 'usersAuth']);
+$routes->get('/list-category', 'Category::index', ['filter' => 'usersAuth']);
+$routes->get('/add-category', 'Category::add', ['filter' => 'usersAuth']);
 $routes->add('/profile', 'User::profile', ['filter' => 'usersAuth']);
 $routes->post('/edit', 'User::edit', ['filter' => 'usersAuth']);
 $routes->post('delete/(:segment)', 'User::delete/$1', ['filter' => 'usersAuth']);

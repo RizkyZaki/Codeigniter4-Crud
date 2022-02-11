@@ -1,0 +1,73 @@
+CRITICAL - 2022-02-11 00:20:47 --> Undefined variable $validation
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\list-category.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 138)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/list-c...', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(8): view('Category/list-c...')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 00:21:06 --> Undefined variable $validation
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\list-category.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 138)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/list-c...', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(8): view('Category/list-c...')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 00:21:35 --> Undefined variable $news
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\list-category.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/list-c...', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(8): view('Category/list-c...')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 00:45:53 --> Undefined variable $validation
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\add.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 138)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/add', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(25): view('Category/add')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->add()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 01:01:11 --> Undefined array key "kategori"
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\list-category.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/list-c...', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(20): view('Category/list-c...', Array)
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->index()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 01:29:02 --> Undefined property: App\Controllers\Category::$kategoriModel
+#0 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->index()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-11 01:39:35 --> Undefined variable $validation
+#0 C:\xampp\htdocs\ci4app\app\Views\Category\add.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 133)
+#1 C:\xampp\htdocs\ci4app\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci4app\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ci4app\system\Common.php(1089): CodeIgniter\View\View->render('Category/add', Array, true)
+#4 C:\xampp\htdocs\ci4app\app\Controllers\Category.php(25): view('Category/add')
+#5 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\Category->add()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

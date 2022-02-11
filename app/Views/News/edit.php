@@ -45,9 +45,9 @@
             <div class="block-card mb-4">
                 <div class="block-card-header">
                     <h2 class="widget-title">Edit News</h2>
-                    <?php if (session()->getFlashdata('Pesan')) : ?>
+                    <?php if (session()->getFlashdata('Ubah')) : ?>
                     <div class="alert alert-success" role="alert">
-                        <?= session()->getFlashdata('Pesan'); ?> 
+                        <?= session()->getFlashdata('Ubah'); ?> 
                     </div>
                     <?php endif; ?>
                     <div class="stroke-shape"></div>
@@ -56,6 +56,7 @@
                     <form method="post" action="<?= base_url(); ?>/News/update/<?= $news['id']; ?>" class="form-box row" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
                         <input type="hidden" name="slug" value="<?= $news['slug']; ?>">
+                        <input type="hidden" name="fotoLama" value="<?= $news['foto'];?>">
                             <div class="col-lg-12">
                                 <div class="input-box">
                                     <label class="label-text">News Title</label>
@@ -67,25 +68,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!-- end col-lg-12 -->
-                                        <!-- <div class="col-lg-12">
-                                            <div class="input-box">
-                                                <label class="label-text">Add Category</label>
-                                                <div class="form-group user-chosen-select-container">
-                                                    <span class="la la-briefcase form-icon"></span>
-                                                    <select class="user-chosen-select">
-                                                        <option value="">Select a Category</option>
-                                                        <option value="">Health</option>
-                                                        <option value="">Politics</option>
-                                                        <option value="">World</option>
-                                                        <option value="">Music</option>
-                                                        <option value="">Music</option>
-                                                        <option value="">Sports</option>
-                                                        <option value="">Games</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>end col-lg-12 -->
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-box">
+                                    <label class="label-text">Add Category</label>
+                                    <div class="form-group user-chosen-select-container">
+                                        <select class="user-chosen-select" name="id_kategori" id="id_kategori">
+                                        <?php foreach($kategori as $k) : ?>
+                                            <option value="<?=$k['id_kat'];?>" <?=$news['id_kategori'] == $k['id_kat'] ? 'selected' : null ?>><?=$k['nama_kategori'];?></option>
+                                        <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> 
                             <div class="col-lg-12">
                                 <div class="input-box">
                                         <label class="label-text">Description</label>

@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1644291699;_ci_previous_url|s:39:"http://localhost/ci4app/public/register";kesalahan|s:240:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>Confirm Password does not match</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";__ci_vars|a:3:{s:9:"kesalahan";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:8:"username";s:6:"winter";s:5:"email";s:18:"minjeong@gmail.com";s:4:"name";s:8:"Minjeong";s:8:"password";s:8:"12345678";s:12:"pasword_conf";s:8:"12345678";s:6:"signup";s:8:"Register";}}_ci_validation_errors|s:66:"a:1:{s:13:"password_conf";s:31:"Confirm Password does not match";}";

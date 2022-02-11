@@ -24,13 +24,19 @@ class News extends BaseController
             'validation' => \Config\Services::validation(),
             'kategori' => $this->kategoriModel->findAll(),
         ];
-        echo view('News/create', $data);
+        return view('News/create', $data);
     }
 
     public function save(){
 
         if (!$this->validate([
             'judul' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                ]
+            ],
+            'deskripsi' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Harus diisi',
@@ -45,7 +51,7 @@ class News extends BaseController
             ]
         ])) {
             // $validation = \Config\Services::validation();
-            // return redirect()->to('/film/create')->withInput()->with('validation', $validation);
+            // return redirect()->to('create')->withInput()->with('validation', $validation);
             return redirect()->to('create')->withInput();
         }
 
@@ -70,6 +76,7 @@ class News extends BaseController
         ]);
 
         session()->setFlashdata('Pesan', 'Berita baru telah ditambahkan.');
+        
 
         return redirect()->to('create');
     }
@@ -106,53 +113,81 @@ class News extends BaseController
 
     public function delete($id)
     {
+        $news = $this->newsModel->find($id);
+
+        if($news['foto'] != 'default.png') {
+            unlink('img/' . $news['foto']);
+        }
+
+
         $this->newsModel->delete($id);
-        return redirect('list')->with('succes', 'berita berhasil dihapus');
+        return redirect('list')->with('success', 'berita berhasil dihapus');
     }
 
     public function edit($slug)
     {
         $data = [
-            'title' => 'form ubah data film',
+            'title' => 'form ubah data Berita',
             'validation' => \Config\Services::validation(),
-            'news' => $this->newsModel->getNews($slug)
+            'news' => $this->newsModel->getNews($slug),
+            'kategori' => $this->kategoriModel->findAll()
         ];
         return view('News/edit', $data);
     }
     public function update($id)
     {
         
-        $newsLama = $this->newsModel->getNews($this->request->getVar('slug'));
-        if($newsLama['judul'] == $this->request->getVar('judul')) 
-        {
-            $rule_judul = 'required';
-        } else {
-            $rule_judul = 'required';
-        }
+        // $newsLama = $this->newsModel->getNews($this->request->getVar('slug'));
+        // if($newsLama['judul'] == $this->request->getVar('judul')) 
+        // {
+        //     $rule_judul = 'required';
+        // } else {
+        //     $rule_judul = 'required';
+        // }
 
-        // Validation
+        // // Validation
         if (!$this->validate([
             'judul' => [
-                'rules' => $rule_judul,
                 'errors' => [
                     'required' => '{field} harus Diisi'
                 ]
-            ]
+                ],
+                'foto' => [
+                    'rules' => 'is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+                    'errors' => [
+                        'is_image' => 'Yang dipilih bukan gambar',
+                        'mime_in' => 'Yang dipilih bukan gambar'
+                    ] 
+                ]
         ])) {
-            $validation = \Config\Services::validation();
-            return redirect()->to('/edit' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+            return redirect()->to('/edit' . $this->request->getVar('slug'))->withInput();
         }
+
+        $fileFoto = $this->request->getFile('foto');
+
+        if ($fileFoto->getError() == 4) {
+            $namaFoto = $this->request->getVar('fotoLama');
+        } else {
+            $namaFoto = $fileFoto->getRandomName();
+            $fileFoto->move('img', $namaFoto);
+            unlink('img/' . $this->request->getVar('fotoLama'));
+        }
+        
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->newsModel->save([
             'id' => $id,
             'judul' => $this->request->getVar('judul'),
+            'id_kategori' => $this->request->getVar('id_kategori'),
             'slug' => $slug,
             'isi' => $this->request->getVar('isi'),
-            'foto' => $this->request->getVar('foto')
+            'foto' => $namaFoto
         ]);
 
-        session()->setFlashdata('Pesan', 'Data film baru saja di ubah.');
+        
+        // $data = $this->request->getPost();
+        // $this->newsModel->update($id, $data);
+        session()->setFlashdata('Ubah', 'Data Berita baru saja di ubah.');
 
         return redirect()->to('list');
     }

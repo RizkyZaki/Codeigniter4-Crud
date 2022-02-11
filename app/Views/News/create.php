@@ -65,11 +65,17 @@
                 </a>
             </li>
             <li><hr class="sidebar-divider border-top-color"></li>
-            <li class="sidebar-heading">Add News</li>
+            <li class="sidebar-heading">News</li>
             <li class="nav-item active">
                 <a class="nav-link" href="<?= base_url(); ?>/create">
                     <i class="la la-folder-plus font-size-18 mr-1"></i>
                     <span>Create News</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url(); ?>/list-category">
+                    <i class="la la-tags font-size-18 mr-1"></i>
+                    <span>Category</span>
                 </a>
             </li>
             <li>
@@ -114,12 +120,12 @@
                         <div class="block-card mb-4">
                             <div class="block-card-header">
                                 <h2 class="widget-title">Add News</h2>
+                                <div class="stroke-shape"></div>
                                 <?php if (session()->getFlashdata('Pesan')) : ?>
                                     <div class="alert alert-success" role="alert">
                                         <?= session()->getFlashdata('Pesan'); ?> 
                                     </div>
                                 <?php endif; ?>
-                                <div class="stroke-shape"></div>
                             </div><!-- end block-card-header -->
                             <div class="block-card-body">
                                 <form method="post" action="<?= base_url(); ?>/News/save" class="form-box row" enctype="multipart/form-data">
@@ -129,7 +135,7 @@
                                             <label class="label-text">News Title</label>
                                             <div class="form-group">
                                                 <span class="la la-briefcase form-icon"></span>
-                                                <input class="form-control" <?= ($validation->hasError('judul')) ? 'is-invalid' : ''; ?> type="text" name="judul" id="judul" value="<?= old('judul'); ?>" placeholder="Title">
+                                                <input class="form-control <?= ($validation->hasError('judul')) ? 'is-invalid' : ''; ?>" type="text" name="judul" id="judul" value="<?= old('judul'); ?>" placeholder="Title">
                                                 <div class="invalid-feedback">
                                                     <?= $validation->getError('judul'); ?>
                                                 </div>
@@ -152,7 +158,7 @@
                                                 <span class="la la-briefcase form-icon"></span>
                                                 <select class="user-chosen-select" name="id_kategori" id="id_kategori">
                                                 <?php foreach($kategori as $k) : ?>
-                                                    <option value="<?=$k['id_kat'];?>"><?=$k['kategori'];?></option>
+                                                    <option value="<?=$k['id_kat'];?>"><?=$k['nama_kategori'];?></option>
                                                 <?php endforeach; ?>
                                                 </select>
                                             </div>
@@ -161,14 +167,17 @@
                                     <div class="col-lg-12"> 
                                         <div class="input-box">
                                             <label class="label-text">Description</label>
-                                                <div class="form-group">
-                                                    <textarea class="message-control form-control user-text-editor" name="isi" id="isi" value="<?= old('isi'); ?>"></textarea>
+                                            <div class="form-group">
+                                                <textarea class="message-control form-control user-text-editor <?= ($validation->hasError('deskripsi')) ? 'is-invalid' : ''; ?> " name="isi" id="isi" value="<?= old('isi'); ?>"></textarea>
+                                                <div class="invalid-feedback">
+                                                    <?= $validation->getError('deskripsi'); ?>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
                                     <div class="col-lg-12">
                                         <div class="input-box">
-                                            <label class="label-text">Upload Image</label>
+                                            <label for="foto">Upload Gambar</label>
                                             <input class="form-control <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" type="file" id="foto" name="foto">
                                             <div class="invalid-feedback">
                                                 <?= $validation->getError('foto'); ?>
@@ -208,6 +217,7 @@
                 <script src="js/main.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
