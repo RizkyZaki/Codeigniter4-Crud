@@ -13,7 +13,7 @@ class Kategori extends Migration
 				'type'          => 'INT',
                 'auto_increment'=> true,
 			],
-			'kategori'              => [
+			'nama_kat'              => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '255',
 			],

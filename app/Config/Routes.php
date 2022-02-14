@@ -46,8 +46,9 @@ $routes->post('delete/(:segment)', 'User::delete/$1', ['filter' => 'usersAuth'])
 $routes->get('/create', 'News::create', ['filter' => 'usersAuth']);
 $routes->get('/list', 'News::list', ['filter' => 'usersAuth']);
 $routes->get('/news/(:any)', 'News::detail/$1', ['filter' => 'usersAuth']);
-$routes->add('delete/(:segment)', 'News::delete/$1');
-$routes->get('/edit/(:segment)', 'News::edit/$1');
+$routes->add('delete/(:segment)', 'News::delete/$1', ['filter' => 'usersAuth']);
+$routes->add('hapus/(:segment)', 'Category::delete/$1', ['filter' => 'usersAuth']);
+$routes->get('/edit/(:segment)', 'News::edit/$1', ['filter' => 'usersAuth']);
 
 /*
  * --------------------------------------------------------------------

@@ -158,7 +158,7 @@
                                                 <span class="la la-briefcase form-icon"></span>
                                                 <select class="user-chosen-select" name="id_kategori" id="id_kategori">
                                                 <?php foreach($kategori as $k) : ?>
-                                                    <option value="<?=$k['id_kat'];?>"><?=$k['nama_kategori'];?></option>
+                                                    <option value="<?=$k['id_kat'];?>"><?=$k['nama_kat'];?></option>
                                                 <?php endforeach; ?>
                                                 </select>
                                             </div>
@@ -168,9 +168,9 @@
                                         <div class="input-box">
                                             <label class="label-text">Description</label>
                                             <div class="form-group">
-                                                <textarea class="message-control form-control user-text-editor <?= ($validation->hasError('deskripsi')) ? 'is-invalid' : ''; ?> " name="isi" id="isi" value="<?= old('isi'); ?>"></textarea>
+                                                <textarea class="message-control form-control <?= ($validation->hasError('isi')) ? 'is-invalid' : ''; ?> " name="isi" id="isi" value="<?= old('isi'); ?>"></textarea>
                                                 <div class="invalid-feedback">
-                                                    <?= $validation->getError('deskripsi'); ?>
+                                                    <?= $validation->getError('isi'); ?>
                                                 </div>
                                             </div>
                                         </div>

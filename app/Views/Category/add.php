@@ -124,15 +124,15 @@
                             </div><!-- end block-card-header -->
                             <div class="block-card-body">
                                 <form method="post" action="<?= base_url(); ?>/Category/addCategory" class="form-box row">
-                                    <?= csrf_field(); ?>
+                                <?= csrf_field(); ?>
                                     <div class="col-lg-12">
                                         <div class="input-box">
                                             <label class="label-text">Category Name</label>
                                             <div class="form-group">
                                                 <span class="la la-tags form-icon"></span>
-                                                <input class="form-control <?= ($validation->hasError('Kategori')) ? 'is-invalid' : ''; ?>" type="text" name="nama_kategori" id="nama_kategori" placeholder="Category Name">
+                                                <input class="form-control <?= ($validation->hasError('nama_kat')) ? 'is-invalid' : ''; ?>" type="text" name="nama_kat" id="nama_kat" placeholder="Category Name">
                                                 <div class="invalid-feedback">
-                                                    <?= $validation->getError('Kategori'); ?>
+                                                    <?= $validation->getError('nama_kat'); ?>
                                                 </div>
                                             </div>
                                         </div>

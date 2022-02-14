@@ -75,7 +75,7 @@
                                     <div class="form-group user-chosen-select-container">
                                         <select class="user-chosen-select" name="id_kategori" id="id_kategori">
                                         <?php foreach($kategori as $k) : ?>
-                                            <option value="<?=$k['id_kat'];?>" <?=$news['id_kategori'] == $k['id_kat'] ? 'selected' : null ?>><?=$k['nama_kategori'];?></option>
+                                            <option value="<?=$k['id_kat'];?>" <?=$news['id_kategori'] == $k['id_kat'] ? 'selected' : null ?>><?=$k['nama_kat'];?></option>
                                         <?php endforeach; ?>
                                         </select>
                                     </div>

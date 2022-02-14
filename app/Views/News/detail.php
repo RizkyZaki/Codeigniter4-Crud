@@ -61,15 +61,7 @@
                                 </li>
                                 <li class="mr-3">
                                     <i class="la la-tags mr-1"></i>
-                                    <a href="#" class="listing-cat-link">Belum Ada</a>,
-                                </li>
-                                <li class="mr-3">
-                                    <i class="la la-comment mr-1"></i>
-                                    <a href="#" class="listing-cat-link">5 Comments</a>
-                                </li>
-                                <li>
-                                    <i class="la la-share-alt mr-1"></i>
-                                    <a href="#" class="listing-cat-link">55 Share</a>
+                                    <a href="#" class="listing-cat-link"><?=$news['nama_kat'];?></a>
                                 </li>
                             </ul>
                         </div>

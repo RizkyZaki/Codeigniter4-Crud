@@ -122,11 +122,6 @@
                         </div>
                     </div><!-- end breadcrumb-content -->
                 </div>
-                <?php if (session()->getFlashdata('success')) : ?>
-                    <div class="alert alert-warning" role="alert">
-                        <?= session()->getFlashdata('success'); ?> 
-                    </div>
-                <?php endif; ?>
                 <div class="row mx-2">
                     <div class="col-lg-12">
                         <div class="block-card dashboard-card mb-4">
@@ -135,6 +130,11 @@
                                 <?php if (session()->getFlashdata('Ubah')) : ?>
                                     <div class="alert alert-success" role="alert">
                                         <?= session()->getFlashdata('Ubah'); ?> 
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (session()->getFlashdata('success')) : ?>
+                                    <div class="alert alert-warning" role="alert">
+                                        <?= session()->getFlashdata('success'); ?> 
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -150,7 +150,7 @@
                                     <?php foreach($news as $n) : ?>
                                         <tr>
                                             <td><?= $n['judul']; ?></td>
-                                            <td><?=$n['nama_kategori']; ?></td>
+                                            <td><?=$n['nama_kat']; ?></td>
                                             <td>
                                                 <a href="<?= base_url();?>/edit/<?= $n['slug'];?>" class="btn bg-rgb-danger font-weight-small "><i class="la la-edit mr-1"></i>Edit</a>
                                                 <a href="<?= base_url(); ?>/news/<?= $n['slug']; ?>" class="btn bg-rgb-success font-weight-small"><i class="la la-bars mr-1"></i>Detail</a>

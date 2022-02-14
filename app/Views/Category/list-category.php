@@ -122,21 +122,21 @@
                         </div>
                     </div><!-- end breadcrumb-content -->
                 </div>
-                <?php if (session()->getFlashdata('success')) : ?>
-                    <div class="alert alert-warning" role="alert">
-                        <?= session()->getFlashdata('success'); ?> 
-                    </div>
-                <?php endif; ?>
                 <div class="row mx-2">
                     <div class="col-lg-12">
                         <div class="block-card dashboard-card mb-4">
                             <div class="block-card-header">
-                                <h2 class="widget-title pb-0" mb-3>Category</h2>
+                                <h2 class="widget-title pb-0">Category</h2>
                                 <br>
-                                <a href="<?=base_url()?>/add-category" class="btn bg-7 font-weight-small "><i class="la la-plus mr-1"></i>Add Category</a>
+                                <a href="<?=base_url()?>/add-category" class="btn bg-7 font-weight-small mb-3 "><i class="la la-plus mr-1"></i>Add Category</a>
                                 <?php if (session()->getFlashdata('Kategori-masuk')) : ?>
                                     <div class="alert alert-success" role="alert">
                                         <?= session()->getFlashdata('Kategori-masuk'); ?> 
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (session()->getFlashdata('terhapus')) : ?>
+                                    <div class="alert alert-warning" role="alert">
+                                        <?= session()->getFlashdata('terhapus'); ?> 
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -150,10 +150,10 @@
                                 <tbody>
                                     <?php foreach($kategori as $k) : ?>
                                         <tr>
-                                            <td><?=$k['nama_kategori']; ?></td>
+                                            <td><?=$k['nama_kat']; ?></td>
                                             <td>
                                                 <a href="" class="btn bg-rgb-success font-weight-small "><i class="la la-edit mr-1"></i>Edit</a>
-                                                <a href="" class="btn bg-rgb-danger font-weight-small" onclick="return confirm('apakah anda yakin?');"><i class="la la-trash mr-1"></i>Delete</a>
+                                                <a href="<?= base_url(); ?>/hapus/<?= $k['id_kat'];?>" class="btn bg-rgb-danger font-weight-small" onclick="return confirm('apakah anda yakin?');"><i class="la la-trash mr-1"></i>Delete</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

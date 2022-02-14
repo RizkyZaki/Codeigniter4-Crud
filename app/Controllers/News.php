@@ -36,10 +36,10 @@ class News extends BaseController
                     'required' => '{field} Harus diisi',
                 ]
             ],
-            'deskripsi' => [
+            'isi' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} Harus diisi',
+                    'required' => 'deskripsi Harus diisi',
                 ]
             ],
             'foto' => [
@@ -82,17 +82,6 @@ class News extends BaseController
     }
     
     public function list(){
-
-        // $data = [
-        //     'news'  => $this->newsModel->getNews()
-        // ];
-
-        // $db      = \Config\Database::connect();
-        // $builder = $db->table('news');
-        // $builder->select('*');
-        // $builder->join('kategori', 'kategori.id = news.id_kategori');
-        // $query = $builder->get();
-
         $data['news'] = $this->newsModel->getRelasi();
                 
         return view('News/list', $data);
@@ -100,10 +89,7 @@ class News extends BaseController
 
     public function detail($slug)
     {
-        $data = [
-            'title' => 'Detail Film',
-            'news'  => $this->newsModel->getNews($slug),
-        ];
+        $data['news'] = $this->newsModel->getNews($slug);
         if(empty($data['news']))
         {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Berita ' . $slug . ' tidak ditemukan.');

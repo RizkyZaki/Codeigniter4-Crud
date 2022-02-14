@@ -31,10 +31,10 @@ class Category extends BaseController
     public function addCategory()
     {
         if (!$this->validate([
-            'Kategori' => [
-                'rules' => 'required|is_unique[kategori.nama_kategori]',
+            'nama_kat' => [
+                'rules' => 'required|is_unique[kategori.nama_kat]',
                 'errors' => [
-                    'required' => '{field} Harus Diisi',
+                    'required' => 'Kategori Harus Diisi',
                     'is_unique' => 'Kategori Sudah Ada'
                 ]
             ],
@@ -42,13 +42,17 @@ class Category extends BaseController
                 return redirect()->back()->withInput();
             }
         
-            $data = [
-                'nama_kategori' => $this->request->getPost('nama_kategori'),
-            ];
-
-            $this->kategoriModel->save($data);
+            $this->kategoriModel->save([
+                'nama_kat' => $this->request->getVar('nama_kat')
+            ]);
 
         session()->setFlashdata('Kategori-masuk', 'Kategori baru telah ditambahkan.');
         return redirect()->to('list-category');
+    }
+
+    public function delete($id_kat)
+    {
+        $this->kategoriModel->delete($id_kat);
+        return redirect('list-category')->with('terhapus', 'kategori berhasil dihapus');
     }
 }
