@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\NewsModel;
 
 class Landing extends BaseController
 {
     public function index(){
-        echo view('Pages/Landing');
+        $news = new NewsModel();
+        $data['news'] = $news->getRelasi();
+        return view('Pages/Landing', $data);
     }
 }
