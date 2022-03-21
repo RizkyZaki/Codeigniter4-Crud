@@ -1,0 +1,55 @@
+CRITICAL - 2022-03-16 22:29:55 --> Undefined property: App\Controllers\News::$db
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 22:30:14 --> Undefined property: App\Controllers\News::$db
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 22:31:01 --> Undefined property: App\Controllers\News::$db
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 22:33:52 --> Undefined property: App\Controllers\News::$db
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 22:46:58 --> Value of type int is not callable
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): App\Models\NewsModel->getCount()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-16 22:48:31 --> Value of type int is not callable
+#0 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): App\Models\NewsModel->getCount()
+#1 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-16 22:52:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*' at line 2
+CRITICAL - 2022-03-16 22:52:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*' at line 2
+#0 C:\xampp\htdocs\ci4app\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\ci4app\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\ci4app\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\ci4app\app\Models\NewsModel.php(45): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\ci4app\app\Controllers\News.php(19): App\Models\NewsModel->getCount()
+#6 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->dashboard()
+#7 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

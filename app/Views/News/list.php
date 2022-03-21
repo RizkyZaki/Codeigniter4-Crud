@@ -89,7 +89,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url(); ?>/logout"">
+                <a class="nav-link" href="<?= base_url(); ?>/logout">
                     <i class="la la-power-off font-size-18 mr-1"></i>
                     <span>Logout</span>
                 </a>
@@ -118,7 +118,7 @@
                 <div class="container-fluid dashboard-inner-body-container">
                     <div class="breadcrumb-content d-sm-flex align-items-center justify-content-between mb-4">
                         <div class="section-heading">
-                            <h2 class="sec__title font-size-24 mb-0">List News</h2>
+                            <h2 class="sec__title font-size-24 mb-0">My List News</h2>
                         </div>
                     </div><!-- end breadcrumb-content -->
                 </div>

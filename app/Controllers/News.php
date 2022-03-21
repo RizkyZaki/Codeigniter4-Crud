@@ -15,7 +15,13 @@ class News extends BaseController
         $this->kategoriModel = new KategoriModel();
     }
     public function dashboard(){
-        echo view('News/dashboard');
+        
+        $data = [
+            'news' => $this->newsModel->getCountNews(),
+            'user' => $this->newsModel->getCountUser(),
+            'cat' => $this->newsModel->getCountCat()
+        ];
+        echo view('News/dashboard', $data);
     }
 
     public function create(){
@@ -58,7 +64,7 @@ class News extends BaseController
         // Kelola Gambar
         $fileFoto = $this->request->getFile('foto');
         // Tidak Ada Gambar Yg di upload
-        if ($fileFoto->getError()== 4) {
+        if ($fileFoto->getError() == 4) {
             $namaFoto = 'default.png';
         } else {
             // Ada Gambar di upload
@@ -156,7 +162,10 @@ class News extends BaseController
         } else {
             $namaFoto = $fileFoto->getRandomName();
             $fileFoto->move('img', $namaFoto);
-            unlink('img/' . $this->request->getVar('fotoLama'));
+            if ($this->request->getVar('fotoLama') != 'default.png') 
+            {
+                unlink('img/' . $this->request->getVar('fotoLama'));
+            }
         }
         
 

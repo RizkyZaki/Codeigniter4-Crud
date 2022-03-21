@@ -34,7 +34,24 @@ class NewsModel extends Model
     {
         $builder = $this->db->table('news');
         $builder->join('kategori', 'kategori.id_kat = news.id_kategori');
+        // $builder->join('users', 'users.id_kat = news.id_kategori');
         $query = $builder->get();
         return $query->getResultArray();
+    }
+
+    public function getCountNews()
+    {
+        $builder = $this->db->table('news');
+        return $builder->countAllResults();
+    }
+    public function getCountUser()
+    {
+        $builder = $this->db->table('users');
+        return $builder->countAllResults();
+    }
+    public function getCountCat()
+    {
+        $builder = $this->db->table('kategori');
+        return $builder->countAllResults();
     }
 }

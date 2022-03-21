@@ -1,0 +1,16 @@
+CRITICAL - 2022-03-20 22:47:24 --> unlink(img/default.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\News.php(111): unlink('img/default.jpg')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->delete('38')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-20 22:47:42 --> unlink(img/default.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\xampp\\htdocs...', 165)
+#1 C:\xampp\htdocs\ci4app\app\Controllers\News.php(165): unlink('img/default.jpg')
+#2 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(825): App\Controllers\News->update('38')
+#3 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#4 C:\xampp\htdocs\ci4app\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ci4app\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -30,6 +30,7 @@ class Login extends BaseController
                     'email' => $dataUser['email'],
                     'logged_in' => TRUE
                 ]);
+                session()->setFlashdata('login_berhasil', 'Login Berhasil, Anda Berhasil Masuk ke halaman dashboard');
                 return redirect()->to(base_url('dashboard'));
             } else {
                 session()->setFlashdata('login_salah', 'Login Gagal');

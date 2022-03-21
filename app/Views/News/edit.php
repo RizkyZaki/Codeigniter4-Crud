@@ -85,7 +85,7 @@
                                 <div class="input-box">
                                         <label class="label-text">Description</label>
                                     <div class="form-group">
-                                        <textarea class="message-control form-control user-text-editor" name="isi" id="isi" value="<?= $news['isi']; ?>"></textarea>
+                                        <input class="message-control form-control user-text-editor" name="isi" id="isi" value="<?= $news['isi']; ?>"></input>
                                     </div>
                                 </div>
                             </div>

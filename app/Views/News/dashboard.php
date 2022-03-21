@@ -109,8 +109,7 @@
                                     <img src="images/avatar-default.jpg" alt="author-image">
                                     <div class="status-indicator bg-success"></div>
                                 </div>
-                                <span
-                                    class="ml-2 small font-weight-medium d-none d-lg-inline"><?= session()->get('username');?></span>
+                                <span class="ml-2 small font-weight-medium d-none d-lg-inline"><?= session()->get('username');?></span>
                             </a>
                         </li>
                     </ul>
@@ -121,8 +120,74 @@
                             <h2 class="sec__title font-size-24 mb-0">HELLO <?= session()->get('username');?>!</h2>
                         </div>
                     </div><!-- end breadcrumb-content -->
+                    <div class="row">
+                    <div class="col-lg-12 mb-4">
+                    <?php if (!empty(session()->getFlashdata('login_berhasil'))) : ?>
+                        <div class="alert alert-success alert-dismissible fade show p-3" role="alert">
+                            <?= session()->getFlashdata('login_berhasil'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php endif ?>
+                    </div><!-- end col-lg-12 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-item dashboard-stat">
+                            <div class="card-content">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h2 class="card-title font-size-40"><?=$news?></h2>
+                                        <p class="card-sub font-size-18 line-height-24">Total News</p>
+                                    </div>
+                                    <div class="col-auto font-size-60">
+                                        <i class="la la-newspaper text-primary"></i>
+                                    </div>
+                                </div><!-- end row -->
+                            </div><!-- end card-content -->
+                        </div><!-- end card-item -->
+                    </div><!-- end col-lg-3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-item dashboard-stat">
+                            <div class="card-content">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h2 class="card-title font-size-40"><?=$user?></h2>
+                                        <p class="card-sub font-size-18 line-height-24">User</p>
+                                    </div>
+                                    <div class="col-auto font-size-60">
+                                        <i class="la la-users text-success"></i>
+                                    </div>
+                                </div><!-- end row -->
+                            </div><!-- end card-content -->
+                        </div><!-- end card-item -->
+                    </div><!-- end col-lg-3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-item dashboard-stat">
+                            <div class="card-content">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h2 class="card-title font-size-40"><?=$cat?></h2>
+                                        <p class="card-sub font-size-18 line-height-24">Total Category</p>
+                                    </div>
+                                    <div class="col-auto font-size-60">
+                                        <i class="la la-tags text-danger"></i>
+                                    </div>
+                                </div><!-- end row -->
+                            </div><!-- end card-content -->
+                        </div><!-- end card-item -->
+                    </div><!-- end col-lg-3 -->
                 </div>
             </div>
+            <!-- <div class="dashboard-footer bg-white fixed-bottom">
+                <div class="container-fluid">
+                    <div class="copy-right d-flex align-items-center justify-content-between">
+                        <p class="copy__desc">
+                            &copy; Copyright Listhub <script> document.write(new Date().getFullYear()); </script>. Made with
+                            <span class="la la-heart-o"></span> by <a href="https://www.youtube.com/channel/UC9Hqgb2HRMFnDS43EQU-u_Q">Zaki</a>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
         </div>   
 <!-- ================================
     START DASHBOARD AREA
