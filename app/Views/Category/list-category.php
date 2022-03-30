@@ -6,7 +6,7 @@
     <meta name="author" content="TechyDevs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard Page</title>
+    <title>Easy-News | List Category</title>
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
 
@@ -152,7 +152,6 @@
                                         <tr>
                                             <td><?=$k['nama_kat']; ?></td>
                                             <td>
-                                                <a href="" class="btn bg-rgb-success font-weight-small "><i class="la la-edit mr-1"></i>Edit</a>
                                                 <a href="<?= base_url(); ?>/hapus/<?= $k['id_kat'];?>" class="btn bg-rgb-danger font-weight-small" onclick="return confirm('apakah anda yakin?');"><i class="la la-trash mr-1"></i>Delete</a>
                                             </td>
                                         </tr>

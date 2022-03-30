@@ -6,7 +6,7 @@
     <meta name="author" content="TechyDevs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard Page</title>
+    <title>Easy-News | Update News</title> 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
 
@@ -85,7 +85,7 @@
                                 <div class="input-box">
                                         <label class="label-text">Description</label>
                                     <div class="form-group">
-                                        <input class="message-control form-control user-text-editor" name="isi" id="isi" value="<?= $news['isi']; ?>"></input>
+                                        <input class="form-control" name="isi" id="isi" value="<?= $news['isi']; ?>"></input>
                                     </div>
                                 </div>
                             </div>
